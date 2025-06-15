@@ -1,0 +1,17 @@
+# Usa una imagen base con Java 17
+FROM eclipse-temurin:17-jdk-alpine
+
+# Crea un directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia todo el contenido del proyecto al contenedor
+COPY . .
+
+# Construye la app con Maven Wrapper (usa el mvnw que ya tienes en tu repo)
+RUN ./mvnw clean package -DskipTests
+
+# Expón el puerto 8080 para acceso externo
+EXPOSE 8080
+
+# Comando para ejecutar el JAR generado
+CMD ["java", "-jar", "target/api-0.0.1-SNAPSHOT.jar"]
