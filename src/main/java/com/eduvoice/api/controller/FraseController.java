@@ -28,5 +28,4 @@ public class FraseController {
         List<FraseDTO> lista = fraseService.obtenerTodasAleatoriasPorCategoria(categoria);
         return ResponseEntity.ok(lista);
     }
-    
 }

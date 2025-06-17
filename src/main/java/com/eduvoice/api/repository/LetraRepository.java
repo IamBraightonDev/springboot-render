@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LetraRepository extends CrudRepository<Letra, Integer> {
-    
-    @Query(value = "EXEC SP_ObtenerLetras", nativeQuery = true)
-    List<Letra> encontrarTodasLasLetras();
+
+    List<Letra> findAll();
     
 }

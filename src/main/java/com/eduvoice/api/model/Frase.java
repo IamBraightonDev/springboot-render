@@ -20,18 +20,17 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "Frases")
+@Table(name = "tb_frases")
 public class Frase implements Serializable {
-    
+
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "TB_FRA_id")
     private Integer id;
-    
-    @Column(name = "frase")
+
+    @Column(name = "TB_FRA_frase")
     private String frase;
-    
-    @Column(name = "categoria")
+
+    @Column(name = "TB_FRA_categoria")
     private String categoria;
-    
 }

@@ -12,8 +12,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PalabraRepository extends CrudRepository<Palabra, Integer> {
-    
-    @Query(value = "EXEC SP_ObtenerPalabrasPorCategoria :categoria", nativeQuery = true)
-    List<Palabra> encontrarTodasPorCategoria(@Param("categoria") String categoria);
+
+    List<Palabra> findAllByCategoria(String categoria);
     
 }

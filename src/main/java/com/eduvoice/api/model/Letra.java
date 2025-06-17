@@ -12,6 +12,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /** @author Paico Uchuya Braighton Maxwell */
 
 @Data
@@ -19,15 +21,15 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "Letras")
-public class Letra {
+@Table(name = "tb_letras")
+public class Letra implements Serializable {
     
     @Id
-    @Column(name = "id")
+    @Column(name = "TB_LET_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    
-    @Column(name = "letra", nullable = false, columnDefinition = "CHAR(1)")
+
+    @Column(name = "TB_LET_letra")
     private char letra;
     
 }

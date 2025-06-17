@@ -25,7 +25,7 @@ public class LetraServiceImpl implements LetraService {
 
     @Override
     public List<LetraDTO> obtenerTodasAleatorias() {
-        List<Letra> letras = letraRepository.encontrarTodasLasLetras();
+        List<Letra> letras = letraRepository.findAll();
         if (letras.isEmpty()) {
             throw new RecursoNoEncontradoException("No se encontraron letras");
         }

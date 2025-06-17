@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface NumeroRepository extends CrudRepository<Numero, Integer> {
-    
-    @Query(value = "EXEC SP_ObtenerNumeros", nativeQuery = true)
-    List<Numero> encontrarTodosLosNumeros();
+
+    List<Numero> findAll();
     
 }

@@ -25,7 +25,7 @@ public class FraseServiceImpl implements FraseService {
 
     @Override
     public List<FraseDTO> obtenerTodasAleatoriasPorCategoria(String categoria) {
-        List<Frase> frases = fraseRepository.encontrarTodasPorCategoria(categoria);
+        List<Frase> frases = fraseRepository.findAllByCategoria(categoria);
         if (frases.isEmpty()) {
             throw new RecursoNoEncontradoException("No se encontraron frases para la categoría: " + categoria);
         }

@@ -25,7 +25,7 @@ public class PalabraServiceImpl implements PalabraService {
 
     @Override
     public List<PalabraDTO> obtenerTodasAleatoriasPorCategoria(String categoria) {
-        List<Palabra> palabras = palabraRepository.encontrarTodasPorCategoria(categoria);
+        List<Palabra> palabras = palabraRepository.findAllByCategoria(categoria);
         if (palabras.isEmpty()) {
             throw new RecursoNoEncontradoException("No se encontraron palabras para la categoría: " + categoria);
         }

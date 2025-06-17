@@ -25,7 +25,7 @@ public class NumeroServiceImpl implements NumeroService {
 
     @Override
     public List<NumeroDTO> obtenerTodosAleatorios() {
-        List<Numero> numeros = numeroRepository.encontrarTodosLosNumeros();
+        List<Numero> numeros = numeroRepository.findAll();
         if (numeros.isEmpty()) {
             throw new RecursoNoEncontradoException("No se encontraron numeros");
         }

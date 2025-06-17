@@ -12,8 +12,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FraseRepository extends CrudRepository<Frase, Integer> {
-    
-    @Query(value = "EXEC SP_ObtenerFrasesPorCategoria :categoria", nativeQuery = true)
-    List<Frase> encontrarTodasPorCategoria(@Param("categoria") String categoria);
+
+    List<Frase> findAllByCategoria(String categoria);
     
 }
