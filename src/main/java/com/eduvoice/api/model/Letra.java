@@ -30,6 +30,6 @@ public class Letra implements Serializable {
     private Integer id;
 
     @Column(name = "TB_LET_letra")
-    private char letra;
+    private char valor;
     
 }

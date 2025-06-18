@@ -30,7 +30,7 @@ public class FraseServiceImpl implements FraseService {
             throw new RecursoNoEncontradoException("No se encontraron frases para la categoría: " + categoria);
         }
         return frases.stream()
-                .map(f -> new FraseDTO(f.getFrase(), f.getCategoria()))
+                .map(f -> new FraseDTO(f.getValor(), f.getCategoria()))
                 .collect(Collectors.toList());
     }
 }

@@ -30,7 +30,7 @@ public class Numero implements Serializable {
     private Integer id;
 
     @Column(name = "TB_NUM_numero")
-    private Integer numero;
+    private Integer valor;
 
     @Column(name = "TB_NUM_texto")
     private String texto;

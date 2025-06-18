@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class FraseDTO {
     
-    private String frase;
+    private String valor;
     private String categoria;
     
 }

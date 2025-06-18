@@ -29,7 +29,7 @@ public class Frase implements Serializable {
     private Integer id;
 
     @Column(name = "TB_FRA_frase")
-    private String frase;
+    private String valor;
 
     @Column(name = "TB_FRA_categoria")
     private String categoria;

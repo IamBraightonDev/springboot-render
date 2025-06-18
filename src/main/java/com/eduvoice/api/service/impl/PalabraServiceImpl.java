@@ -30,7 +30,7 @@ public class PalabraServiceImpl implements PalabraService {
             throw new RecursoNoEncontradoException("No se encontraron palabras para la categoría: " + categoria);
         }
         return palabras.stream()
-                .map(p -> new PalabraDTO(p.getPalabra(), p.getCategoria()))
+                .map(p -> new PalabraDTO(p.getValor(), p.getCategoria()))
                 .collect(Collectors.toList());
     }
 }

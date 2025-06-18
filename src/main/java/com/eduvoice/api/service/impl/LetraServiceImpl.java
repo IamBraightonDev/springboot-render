@@ -30,7 +30,7 @@ public class LetraServiceImpl implements LetraService {
             throw new RecursoNoEncontradoException("No se encontraron letras");
         }
         return letras.stream()
-                .map(l -> new LetraDTO(l.getLetra()))
+                .map(l -> new LetraDTO(l.getValor()))
                 .collect(Collectors.toList());
     }
 }

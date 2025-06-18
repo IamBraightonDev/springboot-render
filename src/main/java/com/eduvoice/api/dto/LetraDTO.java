@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LetraDTO {
     
-    private char letra;
+    private char valor;
     
 }

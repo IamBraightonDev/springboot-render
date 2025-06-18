@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class NumeroDTO {
     
-    private Integer numero;
+    private Integer valor;
     private String texto;
     
 }

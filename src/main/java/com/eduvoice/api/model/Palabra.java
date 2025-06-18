@@ -28,7 +28,7 @@ public class Palabra implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "TB_PAL_palabra")
-    private String palabra;
+    private String valor;
 
     @Column(name = "TB_PAL_categoria")
     private String categoria;

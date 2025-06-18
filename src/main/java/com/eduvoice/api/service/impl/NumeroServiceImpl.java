@@ -30,7 +30,7 @@ public class NumeroServiceImpl implements NumeroService {
             throw new RecursoNoEncontradoException("No se encontraron numeros");
         }
         return numeros.stream()
-                .map(n -> new NumeroDTO(n.getNumero(), n.getTexto()))
+                .map(n -> new NumeroDTO(n.getValor(), n.getTexto()))
                 .collect(Collectors.toList());
     }
 }

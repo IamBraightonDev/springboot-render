@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PalabraDTO {
     
-    private String palabra;
+    private String valor;
     private String categoria;
     
 }
