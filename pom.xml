@@ -13,9 +13,9 @@
     </parent>
 
     <groupId>com.eduvoice</groupId>
-    <artifactId>eduvoice</artifactId>
+    <artifactId>api</artifactId>
     <version>0.0.1</version>
-    <name>eduvoice</name>
+    <name>api</name>
     <description>Mi Primera Api</description>
 
     <properties>
