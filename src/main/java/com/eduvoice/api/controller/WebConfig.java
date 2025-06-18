@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // permite todos los endpoints
-                        .allowedOrigins("https://eduvoicepro.vercel.app/") // frontend
+                        .allowedOrigins("https://eduvoicepro.vercel.app/", "http://localhost:3305/") // frontend
                         .allowedMethods("*") // GET, POST, PUT, DELETE...
                         .allowedHeaders("*")
                         .allowCredentials(true); // si usas cookies o auth

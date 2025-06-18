@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class NumeroServiceImpl implements NumeroService {
-    
+
     private final NumeroRepository numeroRepository;
 
     @Autowired
