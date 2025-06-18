@@ -1,5 +1,7 @@
+com\eduvoice\api\controller\WebConfig$1.class
 com\eduvoice\api\service\impl\NumeroServiceImpl.class
 com\eduvoice\api\ApiApplication.class
+com\eduvoice\api\controller\WebConfig.class
 com\eduvoice\api\exception\GlobalExceptionHandler.class
 com\eduvoice\api\service\NumeroService.class
 com\eduvoice\api\service\PalabraService.class
